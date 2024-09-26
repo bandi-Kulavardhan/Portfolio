@@ -6,7 +6,6 @@ body {
     padding: 0;
 }
 
-
 header {
     text-align: center;
     background-color: white;
@@ -21,9 +20,9 @@ header {
 
 .slideshow-container {
     display: flex;
-    width: 300%;
+    width: 200%;
     height: 100%;
-    animation: slideAnimation 120s ;
+    animation: slideAnimation 120s infinite;
 }
 
 .slide {
@@ -46,14 +45,10 @@ header {
     background: rgba(44, 62, 80, 0.8); 
 }
 
-
 .slide:nth-child(even) {
     background-color: #ecf0f1; 
     color: #2c3e50; 
 }
-
-
-
 
 .hero-overlay-slide {
     padding: 20px;
@@ -99,10 +94,9 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #3498db; /* Hover effect in bright blue */
+    background-color: #3498db; 
 }
 
-/* Section Styles */
 section {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     background-color: white;
@@ -112,19 +106,17 @@ section {
 }
 
 section h2 {
-    color: #3498db; /* Bright blue headings */
+    color: #3498db; 
 }
 
-/* Project & Education Sections */
 .project, .education {
     margin-bottom: 20px;
 }
 
 .project h3, .education h3 {
-    color: #2980b9; /* Slightly darker blue for subheadings */
+    color: #2980b9;
 }
 
-/* Unordered List Styles */
 ul {
     padding: 0;
     list-style-type: none;
@@ -134,10 +126,9 @@ ul li {
     padding: 5px 0;
 }
 
-/* Footer Styles */
 footer {
-    background-color: #2c3e50; /* Dark Blue */
-    color: #ecf0f1; /* Light text */
+    background-color: #2c3e50;
+    color: #ecf0f1;
     text-align: center;
     padding: 10px;
 }
@@ -161,10 +152,9 @@ footer .social-media a:hover img {
     transform: scale(1.2);
 }
 
-/* Animation for Hero Slideshow */
 @keyframes slideAnimation {
     0% { transform: translateX(0); }
     33% { transform: translateX(-100%); }
     66% { transform: translateX(-200%); }
-    100% { transform: translateX(0); }
+    100% { transform: translateX(0%); }
 }
